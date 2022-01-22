@@ -1,7 +1,7 @@
 <h1 align="center">MateForPi</h1>
 
 ![alt text](https://github.com/MatroCholo/mateforpi/blob/main/screenshot1.png)
-MateForPi - простой скрипт для установки полносью работающего окружения рабочего стола MATE.
+MateForPi - простой скрипт для установки полностью работающего окружения рабочего стола MATE.
 
 Перед запуском скрипта необходимо провести первоначальную настройку:
 
