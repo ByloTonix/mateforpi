@@ -1,0 +1,38 @@
+#!/bin/bash
+
+if [ "${UID}" != "0" ]; then
+  echo "You must be root to start the installation"
+  exit 1
+fi
+
+echo "Starting Process"
+
+echo "Updating Repositories"
+sleep 2
+apt update -y
+wait
+apt upgrade -y
+wait
+
+
+echo "Install all packages"
+sleep 2
+apt install -y xserver-xorg --no-install-recommends
+apt install -y mate mate-desktop* mate-core gnome-software lightdm
+apt install -y chromium-browser rpi-chromium-mods piwiz rc-gui
+wait
+
+echo "Disabling dhcpcd to be able to connect to Wi-Fi"
+sleep 2
+systemctl disable dhcpcd && /etc/init.d/dhcpcd stop
+wait
+
+
+echo "Extra tweaks"
+
+touch /etc/polkit-1/localauthority.conf.d/60-desktop-policy.conf
+wait
+sudo sh -c 'echo "[Configuration]" >> //etc/polkit-1/localauthority.conf.d/60-desktop-policy.conf'
+sudo sh -c 'echo "AdminIdentities=unix-group:sudo" >> //etc/polkit-1/localauthority.conf.d/60-desktop-policy.conf'
+
+echo "That's all. Reboot and enjoy your new desktop ;)"
