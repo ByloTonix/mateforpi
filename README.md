@@ -5,7 +5,7 @@ MateForPi - простой скрипт для установки полност
 
 Перед запуском скрипта необходимо провести первоначальную настройку:
 
-Установите Raspberry Pi OS Lite (на 64-битной версии не тестировалось) подключите плату по Ethernet (предпочтительно).
+Установите Raspberry Pi OS Lite (на 64-битной версии не тестировалось), подключите плату по Ethernet (предпочтительно).
 
 Стандартные данные для входа (login/password): pi/raspberry
 
@@ -17,7 +17,7 @@ https://www.raspberrypi.com/documentation/computers/using_linux.html#creating-a-
 sudo raspi-config
 ```
 Далее "Performance Options" --> "GPU Memory" и задайте 320 в поле ввода
-Если необходим разгон, то
+Если необходим разгон, то откройте файл конфигурации
 ```sh
 sudo nano /boot/config.txt
 ```
