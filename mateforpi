@@ -18,7 +18,7 @@ wait
 echo "Install all packages"
 sleep 2
 apt install -y xserver-xorg --no-install-recommends
-apt install -y mate mate-desktop* mate-core gnome-software lightdm
+apt install -y mate mate-desktop* mate-core gnome-software lightdm network-manager
 apt install -y chromium-browser rpi-chromium-mods piwiz rc-gui
 wait
 
