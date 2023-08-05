@@ -17,8 +17,7 @@ https://www.raspberrypi.com/documentation/computers/using_linux.html#creating-a-
 ```sh
 sudo raspi-config
 ```
-В разделе "Performance Options" выберите "GPU Memory" и введите значение "320" в поле ввода
-Если необходим разгон, то откройте файл конфигурации
+В разделе "Performance Options" выберите "GPU Memory" и введите значение "320" в поле ввода. Если необходим разгон, то откройте файл конфигурации
 ```sh
 sudo nano /boot/config.txt
 ```
