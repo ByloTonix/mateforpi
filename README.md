@@ -1,15 +1,16 @@
 <h1 align="center">MateForPi</h1>
 
 ![alt text](https://github.com/MatroCholo/mateforpi/blob/main/screenshot1.png)
-MateForPi - простой скрипт для установки полностью работающего окружения MATE.
+MateForPi - простой скрипт для установки полностью работающего окружения MATE на Raspberry Pi OS.
 
 Перед запуском скрипта необходимо провести первоначальную настройку:
 
-Установите Raspberry Pi OS Lite (на 64-битной версии не тестировалось), подключите плату по Ethernet (предпочтительно).
+Установите Raspberry Pi OS Lite (на 64-битной версии не тестировалось) и подключите плату по Ethernet (предпочтительно).
 
-Стандартные данные для входа (login/password): pi/raspberry
+В случае, если вы не использовали Raspberry Pi Imager для записи образа и создания собственного пользователя, то
 
-Создайте нового пользователя и удалите стандартного: 
+- Стандартные данные для входа (login/password): pi/raspberry
+- Создание нового пользователя и удаление стандартного: 
 https://www.raspberrypi.com/documentation/computers/using_linux.html#creating-a-new-user
 
 Введите следующее:
