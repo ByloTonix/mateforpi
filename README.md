@@ -1,6 +1,6 @@
 <h1 align="center">MateForPi</h1>
 
-![alt text](https://github.com/MatroCholo/mateforpi/blob/main/screenshot1.png)
+![alt text](https://github.com/ByloTonix/mateforpi/blob/main/screenshot1.png)
 MateForPi is a simple script for installing a fully working MATE environment on Raspberry Pi OS.
 
 Before running the script, you need to perform some actions:
@@ -34,12 +34,12 @@ gpu_freq=750
 
 How we are ready to start installation:
 ```sh
-sudo apt install git --no-install-recommends && git clone https://github.com/MatroCholo/mateforpi/ && cd mateforpi && sudo bash mateforpi
+sudo apt install git --no-install-recommends && git clone https://github.com/ByloTonix/mateforpi/ && cd mateforpi && sudo bash mateforpi
 ```
 
 My MATE Desktop after 3-min customization:
 
-![alt text](https://github.com/MatroCholo/mateforpi/blob/main/screenshot2.png)
+![alt text](https://github.com/ByloTonix/mateforpi/blob/main/screenshot2.png)
 
 ### Important Info:
 - Since Raspberry Pi OS Bookworm and Raspberry Pi 5 were released, this guide can be outdated.
