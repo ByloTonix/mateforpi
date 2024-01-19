@@ -10,7 +10,7 @@ Before running the script, you need to perform some actions:
   - Create a new user and delete a standard one:
     - ``sh sudo adduser your_name ``
     - ``sh sudo adduser your_name sudo ``
-    - Create the file using ``sh sudo visudo /etc/sudoers.d/010_YOURNAME-nopasswd ``
+    - Create the file using ``sh sudo visudo /etc/sudoers.d/010_YOURNICKNAME-nopasswd ``
     - Insert the following contents on a single line: ``sh YOURNICKNAME ALL=(ALL) NOPASSWD: ALL``
     - Save the file and exit.
   - login with your new account created and ``sh sudo userdel -r pi ``
