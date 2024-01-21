@@ -1,19 +1,20 @@
 <h1 align="center">MateForPi</h1>
 
 ![alt text](https://github.com/ByloTonix/mateforpi/blob/main/screenshot1.png)
-MateForPi is a simple script for installing a fully working MATE environment on Raspberry Pi OS.
+
+MateForPi is a simple script that installs a fully functional MATE desktop environment on Raspberry Pi OS.
 
 Before running the script, you need to perform some actions:
-- Install Raspberry Pi OS Lite (not tested on the 64-bit version, but it works) and connect the board via Ethernet (preferably) or Wi-Fi.
-- If you have not used Raspberry Pi Imager to flash an image and create your own user, then
-  - Enter default login data (login/password): pi/raspberry
+- Install Raspberry Pi OS Lite (not tested on the 64-bit version, but it supposed to work) and connect the board via Ethernet (preferably) or Wi-Fi.
+- If you don't use Raspberry Pi Imager for flashing images and creating your own users, then
+  - Enter default login data (login/password): ``pi/raspberry``
   - Create a new user and delete a standard one:
-    - ``sh sudo adduser your_name ``
-    - ``sh sudo adduser your_name sudo ``
-    - Create the file using ``sh sudo visudo /etc/sudoers.d/010_YOURNICKNAME-nopasswd ``
-    - Insert the following contents on a single line: ``sh YOURNICKNAME ALL=(ALL) NOPASSWD: ALL``
+    - ``sudo adduser YOURNICKNAME ``
+    - ``sudo adduser YOURNICKNAME sudo ``
+    - Create the file using ``sudo visudo /etc/sudoers.d/010_YOURNICKNAME-nopasswd ``
+    - Insert the following contents as a single line: ``YOURNICKNAME ALL=(ALL) NOPASSWD: ALL``
     - Save the file and exit.
-  - login with your new account created and ``sh sudo userdel -r pi ``
+  - login with your newly created account and run ``sudo userdel -r pi``
 
 - Open the configuration menu:
 ```sh
