@@ -5,7 +5,7 @@
 MateForPi is a simple script that installs a fully functional MATE desktop environment on Raspberry Pi OS.
 
 Before running the script, you need to perform some actions:
-- Install Raspberry Pi OS Lite (not tested on the 64-bit version, but it supposed to work) and connect the board via Ethernet (preferably) or Wi-Fi.
+- Install Raspberry Pi OS Lite (not tested on the 64-bit version, but it is supposed to work) and connect the board via Ethernet (preferably) or Wi-Fi.
 - If you don't use Raspberry Pi Imager for flashing images and creating your own users, then
   - Enter default login data (login/password): ``pi/raspberry``
   - Create a new user and delete a standard one:
@@ -43,4 +43,4 @@ My MATE Desktop after 3-min customization:
 ![alt text](https://github.com/ByloTonix/mateforpi/blob/main/screenshot2.png)
 
 ### Important Info:
-- Since Raspberry Pi OS Bookworm and Raspberry Pi 5 were released, this guide can be outdated.
+- Since Raspberry Pi OS Bookworm and Raspberry Pi 5 were released, this guide may be outdated.
